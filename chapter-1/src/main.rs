@@ -33,4 +33,11 @@ fn main() {
     let pi: f64 = 3.1416;
 
     println!("Value of pi: {}", pi);
+
+    // = = = = = = BOOL = = = = = =
+    // true or false
+
+    let is_snowing: bool = false;
+
+    println!("Is is snowing ? {}", is_snowing);
 }
