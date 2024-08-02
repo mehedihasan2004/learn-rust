@@ -26,4 +26,11 @@ fn main() {
 
     println!("Maximum value of i32: {}", e);
     println!("Maximum value of i64: {}", i);
+
+    // = = = = = = FLOAT = = = = = =
+    // Floats: f32, f64
+
+    let pi: f64 = 3.1416;
+
+    println!("Value of pi: {}", pi);
 }
