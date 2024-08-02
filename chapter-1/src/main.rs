@@ -40,4 +40,10 @@ fn main() {
     let is_snowing: bool = false;
 
     println!("Is is snowing ? {}", is_snowing);
+
+    // = = = = = = CHAR = = = = = =
+
+    let first_letter: char = 'a';
+
+    println!("First letter of the alphabet: {}", first_letter);
 }
