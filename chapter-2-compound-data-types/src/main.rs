@@ -13,8 +13,17 @@ fn main() {
 
     // = = = = = = TUPLE = = = = = =
     let student: (String, i8, bool) = ("Sabbir".to_string(), 3, true);
-    let my_mix_tuple = ("Shad", 23, true, [1, 2, 3, 4, 5]);
+    let my_mix_tuple: (&str, i8, bool, [i8; 5]) = ("Shad", 23, true, [1, 2, 3, 4, 5]);
 
     println!("Student tuple: {:?}", student);
     println!("My mix tuple: {:?}", my_mix_tuple);
+
+    // = = = = = = SLICE = = = = = =
+    let number_slices: &[i8] = &[1, 2, 3, 4, 5];
+    let animal_slices: &[&str] = &["Lion", "Tiger", "Crocodile"];
+    let book_slices: &[&String] = &[&"IT".to_string(), &"HP".to_string(), &"ZEN".to_string()];
+
+    println!("Number slice: {:?}", number_slices);
+    println!("Animal slice: {:?}", animal_slices);
+    println!("Book slice: {:?}", book_slices);
 }
