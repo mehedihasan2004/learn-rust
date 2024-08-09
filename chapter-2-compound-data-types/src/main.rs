@@ -29,10 +29,15 @@ fn main() {
 
     // = = = = = = STRING = = = = = =
     // Strings: growable, mutable, owned string type
-
     let mut stone_cold: String = String::from("Hell, ");
 
     stone_cold.push_str("Yeah!");
 
     println!("Stone Cold Says: {}", stone_cold);
+
+    // = = = = = = STRING SLICE = = = = = =
+    let string: String = String::from("Hello, World!");
+    let string_slice: &str = &string[0..6];
+
+    println!("Slice Value: {}", string_slice);
 }
