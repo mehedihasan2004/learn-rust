@@ -26,4 +26,13 @@ fn main() {
     println!("Number slice: {:?}", number_slices);
     println!("Animal slice: {:?}", animal_slices);
     println!("Book slice: {:?}", book_slices);
+
+    // = = = = = = STRING = = = = = =
+    // Strings: growable, mutable, owned string type
+
+    let mut stone_cold: String = String::from("Hell, ");
+
+    stone_cold.push_str("Yeah!");
+
+    println!("Stone Cold Says: {}", stone_cold);
 }
