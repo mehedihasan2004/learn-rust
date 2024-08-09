@@ -35,11 +35,6 @@ fn human(name: &str, age: u8, height: f32) {
     );
 }
 
-// Function returning values
-fn add(a: u8, b: u8) -> u8 {
-    a + b
-}
-
 /*
 = = = = = = EXPRESSIONS = = = = = =
 Expressions: Anything that returns a value.
@@ -50,3 +45,8 @@ add(3, 4)
 if condition {value1} else {value2}
 {()}
 */
+
+// Function returning values
+fn add(a: u8, b: u8) -> u8 {
+    a + b
+}
