@@ -30,5 +30,22 @@ Ownership Rules:-
 //     let s1 = String::from("RUST");
 //     let s2 = s1;
 
+//     println!("{}", s1); // s1 is not useable anymore
 //     println!("{}", s2);
 // }
+
+// Example of rule number 3.
+fn main() {
+    let s1 = String::from("RUST");
+    let len = calculate_length(&s1);
+
+    println!("Length of '{}' is {}.", s1, len);
+} // s1 goes out of scope and its value will be dropped
+
+fn print_lost(s: &string) {
+    println!("{}", &s1);
+}
+
+fn calculate_length(s: &String) -> usize {
+    s.len()
+}
