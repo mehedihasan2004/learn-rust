@@ -13,16 +13,22 @@ Ownership Rules:-
 3. When the owner goes out of scope, the value will be dropped.
 */
 
-/*
-Example of rule number 1.
-fn main() {
-    let s1 = String::from("RUST");
-    let len = calculate_length(&s1);
+// Example of rule number 1.
+// fn main() {
+//     let s1 = String::from("RUST");
+//     let len = calculate_length(&s1);
 
-    println!("Length of '{}' is {}.", s1, len);
-}
+//     println!("Length of '{}' is {}.", s1, len);
+// }
 
-fn calculate_length(s: &String) -> usize {
-    s.len()
-}
-*/
+// fn calculate_length(s: &String) -> usize {
+//     s.len()
+// }
+
+// Example of rule number 2.
+// fn main() {
+//     let s1 = String::from("RUST");
+//     let s2 = s1;
+
+//     println!("{}", s2);
+// }
