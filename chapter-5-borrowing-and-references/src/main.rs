@@ -11,10 +11,22 @@ Create reference by add "&".
 */
 
 // I. Immutable reference
+// fn main() {
+//     let x: i8 = 5;
+//     let y: &i8 = &x;
+
+//     println!("Value of x is: {}", x);
+//     println!("Value of y is: {}", y);
+// }
+
+// II. Mutable reference
 fn main() {
-    let x: i8 = 5;
-    let y: &i8 = &x;
+    let mut x: i8 = 5;
+    let y: &mut i8 = &mut x;
+
+    *y += 1;
+    *y -= 3;
 
     println!("Value of x is: {}", x);
-    println!("Value of y is: {}", y);
+    // println!("Value of y is: {}", y); // Error-> A mutable reference is allowed only.
 }
